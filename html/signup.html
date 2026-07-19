@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Create Account | HB4 Hub</title>
+    <title>Sign Up | HB4 Hub</title>
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/auth.css">
@@ -13,70 +13,85 @@
 
 <body>
 
-    <main class="auth-container">
+    <div class="auth-container">
 
-        <!-- Left Section -->
-        <section class="auth-left">
+        <!-- Left Side -->
+
+        <div class="auth-left">
 
             <div class="brand">
 
-                <h1>HB4 Hub</h1>
+                <h1>College Hub</h1>
 
                 <p>
-                    Join the official campus marketplace.
+                    Buy, sell and connect with students across your hostel.
+                    A trusted marketplace exclusively for the campus community.
                 </p>
 
             </div>
 
-        </section>
+        </div>
 
-        <!-- Right Section -->
-        <section class="auth-right">
+        <!-- Right Side -->
+
+        <div class="auth-right">
 
             <div class="auth-card">
 
                 <h2>Create Account</h2>
 
-                <p>
-                    Sign up with your Manipal email.
-                </p>
+                <p>Fill in your details to continue.</p>
 
-                <form>
+                <form id="signupForm">
 
                     <div class="input-group">
                         <label>Full Name</label>
-                        <input
-                            type="text"
-                            placeholder="Enter your full name"
-                            required>
+                        <input type="text" placeholder="Enter your full name" required>
                     </div>
 
                     <div class="input-group">
                         <label>Manipal Email</label>
-                        <input
-                            type="email"
-                            placeholder="name@learner.manipal.edu"
-                            required>
+                        <input type="email"
+                               placeholder="name@learner.manipal.edu"
+                               required>
                     </div>
 
                     <div class="input-group">
-                        <label>Password</label>
-                        <input
-                            type="password"
-                            placeholder="Create password"
-                            required>
+                        <label>Mobile Number</label>
+                        <input type="tel"
+                               maxlength="10"
+                               placeholder="9876543210"
+                               required>
                     </div>
 
                     <div class="input-group">
-                        <label>Confirm Password</label>
-                        <input
-                            type="password"
-                            placeholder="Confirm password"
-                            required>
+
+                        <label>Hostel</label>
+
+                        <select required>
+
+                          <option value="">Select Hostel</option>
+
+                            <option>HB1</option>
+                            <option>HB2</option>
+                            <option>HB3</option>
+                            <option>HB4 Boys</option>
+                            <option>HB4 Girls</option>
+                            <option>HB5</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>Room Number</label>
+                        <input type="text"
+                               placeholder="e.g. 1017"
+                               required>
                     </div>
 
                     <button type="submit">
-                        Create Account
+                        Continue
                     </button>
 
                 </form>
@@ -92,9 +107,9 @@
 
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </div>
 
     <script src="../js/signup.js"></script>
 
