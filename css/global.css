@@ -1,0 +1,194 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   Root Variables
+=========================== */
+
+:root{
+
+    --bg: #0F172A;
+    --surface: #1E293B;
+    --surface-light: #263449;
+
+    --primary: #3B82F6;
+    --primary-hover: #2563EB;
+
+    --text: #F8FAFC;
+    --text-secondary: #94A3B8;
+
+    --border: #334155;
+
+    --success: #22C55E;
+    --danger: #EF4444;
+    --warning: #F59E0B;
+
+    --radius-small: 12px;
+    --radius-medium: 18px;
+    --radius-large: 24px;
+
+    --shadow:
+        0 12px 35px rgba(0,0,0,.35);
+
+    --transition: .3s ease;
+
+}
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Plus Jakarta Sans',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   Typography
+=========================== */
+
+h1,h2,h3,h4,h5,h6{
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+p{
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+a:hover{
+
+    color:var(--primary-hover);
+
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    outline:none;
+
+    font-family:inherit;
+
+    transition:var(--transition);
+
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    outline:none;
+
+    border:none;
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--bg);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--surface-light);
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary);
+
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
