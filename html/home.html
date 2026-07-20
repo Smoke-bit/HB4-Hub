@@ -21,35 +21,81 @@
 
         <nav class="navbar">
 
-            <div class="logo">
+    <div class="nav-left">
 
-                <h2>College Hub</h2>
+        <a href="home.html" class="logo">
+            <h2>CollegeHub</h2>
+        </a>
 
-            </div>
+        <div class="nav-links">
 
-            <div class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="HB4boys.html">Marketplace</a>
 
-                <a href="#">Home</a>
-                <a href="#">Marketplace</a>
-                <a href="#">Sell</a>
+            <a href="marketplace.html">Marketplace</a>
 
-            </div>
+            <a href="sell.html">Sell</a>
 
-            <div class="profile-btn">
+        </div>
 
-                <button>
+    </div>
 
-                    👤 Profile
+    <div class="nav-right">
 
-                </button>
+        <button class="notification-btn">
+            🔔
+            <span class="notification-badge">3</span>
+        </button>
 
-            </div>
+        <a href="profile.html" class="profile-btn">
+            👤
+        </a>
 
-        </nav>
+        <a href="login.html" class="logout-btn">
+            Logout
+        </a>
+
+    </div>
+
+</nav>
 
     </header>
 
+<!-- ===================== NOTIFICATIONS ===================== -->
 
+<div class="notification-menu">
+
+    <div class="notification-header">
+
+        <h3>Notifications</h3>
+
+    </div>
+
+    <div class="notification-item">
+
+        📦 Football Boots listed in HB4 Boys
+
+    </div>
+
+    <div class="notification-item">
+
+        📚 DSA Book just posted
+
+    </div>
+
+    <div class="notification-item">
+
+        🍜 Maggi Combo listed
+
+    </div>
+
+    <button class="view-all-btn">
+
+        View All Notifications
+
+    </button>
+
+</div>
 
     <!-- ===================== HERO ===================== -->
 
@@ -117,77 +163,55 @@
 
         <div class="category-grid">
 
-            <button>🍜 Food</button>
+            <button>
 
-            <button>📚 Books</button>
+                <span class="icon">🍜</span>
 
-            <button>💻 Electronics</button>
+                <span>Food</span>
 
-            <button>🎮 Gaming</button>
+            </button>
+            <button>
+                <span class="icon">📚</span>
+                <span>Books</span>
+            </button>
 
-            <button>👕 Clothes</button>
+            <button>
+                <span class="icon">💻</span>
+                <span>Electronics</span>
+            </button>
 
-            <button>🏸 Sports</button>
+            <button>
+                <span class="icon">🎮</span>
+                <span>Gaming</span>
+            </button>
 
-            <button>🪑 Furniture</button>
+            <button>
+                <span class="icon">👕</span>
+                <span>Clothes</span>
+            </button>
 
-            <button>📦 Others</button>
+            <button>
+                <span class="icon">🏸</span>
+                <span>Sports</span>
+            </button>
 
-        </div>
+            <button>
+                <span class="icon">🪑</span>
+                <span>Furniture</span>
+            </button>
 
-    </section>
-
-
-
-    <!-- ===================== RECENT ===================== -->
-
-    <section class="recent">
-
-        <h2>Recently Added</h2>
-
-        <div class="product-container">
-
-            <!-- Product Card -->
-
-            <article class="product-card">
-
-                <img src="" alt="">
-
-                <h3>Maggi Pack</h3>
-
-                <p>₹20</p>
-
-                <span>SnackDealer</span>
-
-            </article>
-
-            <article class="product-card">
-
-                <img src="" alt="">
-
-                <h3>DSA Book</h3>
-
-                <p>₹350</p>
-
-                <span>BookBoss</span>
-
-            </article>
-
-            <article class="product-card">
-
-                <img src="" alt="">
-
-                <h3>Monitor</h3>
-
-                <p>₹4200</p>
-
-                <span>PixelKing</span>
-
-            </article>
+            <button>
+                <span class="icon">📦</span>
+                <span>Others</span>
+            </button>
 
         </div>
 
     </section>
+
+
+
+    
 
 
 
@@ -205,105 +229,16 @@
 
 
 
-    <!-- ===================== POPULAR SELLERS ===================== -->
-
-    <section class="popular-sellers">
-
-        <h2>⭐ Popular Sellers</h2>
-
-        <div class="seller-container">
-
-            <div class="seller-card">
-
-                <h3>SnackDealer</h3>
-
-                <p>⭐ 680 HP</p>
-
-                <p>★★★★☆</p>
-
-            </div>
-
-            <div class="seller-card">
-
-                <h3>BookBoss</h3>
-
-                <p>⭐ 590 HP</p>
-
-                <p>★★★★★</p>
-
-            </div>
-
-            <div class="seller-card">
-
-                <h3>PixelKing</h3>
-
-                <p>⭐ 510 HP</p>
-
-                <p>★★★★☆</p>
-
-            </div>
-
-        </div>
-
-    </section>
 
 
 
-    <!-- ===================== LEADERBOARD ===================== -->
 
-    <section class="leaderboard">
 
-        <h2>🏆 Monthly Leaderboard</h2>
-
-        <ol>
-
-            <li>🥇 SnackDealer - 680 HP</li>
-
-            <li>🥈 BookBoss - 590 HP</li>
-
-            <li>🥉 PixelKing - 510 HP</li>
-
-        </ol>
-
-    </section>
+ 
 
 
 
-    <!-- ===================== PROFILE POPUP ===================== -->
 
-<aside class="profile-menu">
-
-    <div class="profile-header">
-
-        <h3>Utkarsh</h3>
-
-        <p class="profile-nickname">
-            @SnackDealer
-        </p>
-
-        <div class="profile-stats">
-
-            <span>⭐ 680 HP</span>
-
-            <span>🏆 Rank #12</span>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <a href="#">My Profile</a>
-
-    <a href="#">My Listings</a>
-
-    <a href="#">Saved Items</a>
-
-    <a href="#">Settings</a>
-
-    <a href="#">Logout</a>
-
-</aside>
 
 
 
@@ -319,6 +254,7 @@
 
     </footer>
 
+    <script src="../js/home.js"></script>
     <script src="../js/home.js"></script>
 
 </body>

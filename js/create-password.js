@@ -110,18 +110,57 @@ password.addEventListener("input", () => {
 
 });
 
-document.getElementById("passwordForm").addEventListener("submit",(e)=>{
+document.getElementById("passwordForm").addEventListener("submit", async (e) => {
 
     e.preventDefault();
 
-    if(password.value !== confirmPassword.value){
-
+    if (password.value !== confirmPassword.value) {
         alert("Passwords do not match.");
-
         return;
-
     }
 
-    window.location.href="welcome.html";;
+    const name = sessionStorage.getItem("signupName");
+    const email = sessionStorage.getItem("signupEmail");
+    const phone = sessionStorage.getItem("signupPhone");
+    const hostel = sessionStorage.getItem("signupHostel");
+
+    try {
+
+        const response = await fetch("http://localhost:5000/api/auth/register", {
+
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+            name,
+            email,
+            password: password.value
+        })
+
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+
+            sessionStorage.clear();
+
+            window.location.href = "welcome.html";
+
+        } else {
+
+            alert(data.message);
+
+        }
+
+    } catch (err) {
+
+        console.error(err);
+        alert("Unable to create account.");
+
+    }
 
 });

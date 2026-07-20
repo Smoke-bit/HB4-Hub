@@ -1,0 +1,26 @@
+{
+  "name": "hb4-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smoke-bit/HB4-Hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smoke-bit/HB4-Hub/issues"
+  },
+  "homepage": "https://github.com/Smoke-bit/HB4-Hub#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

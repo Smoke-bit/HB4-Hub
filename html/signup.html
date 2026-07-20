@@ -46,51 +46,55 @@
 
                     <div class="input-group">
                         <label>Full Name</label>
-                        <input type="text" placeholder="Enter your full name" required>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
                     </div>
 
                     <div class="input-group">
                         <label>Manipal Email</label>
-                        <input type="email"
-                               placeholder="name@learner.manipal.edu"
-                               required>
+                        <input
+                        type="email"
+                        id="email"
+                        placeholder="name@learner.manipal.edu"
+                        required
+                    >
                     </div>
 
                     <div class="input-group">
                         <label>Mobile Number</label>
-                        <input type="tel"
-                               maxlength="10"
-                               placeholder="9876543210"
-                               required>
+                        <input
+                            type="tel"
+                            id="phone"
+                            maxlength="10"
+                            placeholder="9876543210"
+                            required
+                        >
                     </div>
 
                     <div class="input-group">
 
-                        <label>Hostel</label>
+                        <label for="hostel">Hostel</label>
 
-                        <select required>
+                        <select id="hostel" required>
+                            <option value="" selected disabled>Select your hostel</option>
 
-                          <option value="">Select Hostel</option>
-
-                            <option>HB1</option>
-                            <option>HB2</option>
-                            <option>HB3</option>
-                            <option>HB4 Boys</option>
-                            <option>HB4 Girls</option>
-                            <option>HB5</option>
-
+                            <option value="HB1">HB1</option>
+                            <option value="HB2">HB2</option>
+                            <option value="HB3">HB3</option>
+                            <option value="HB4B">HB4 Boys</option>
+                            <option value="HB4G">HB4 Girls</option>
+                            <option value="HB5">HB5</option>
                         </select>
 
                     </div>
 
-                    <div class="input-group">
-                        <label>Room Number</label>
-                        <input type="text"
-                               placeholder="e.g. 1017"
-                               required>
-                    </div>
+                    
 
-                    <button type="submit">
+                    <button type="submit" class="btn-primary">
                         Continue
                     </button>
 
