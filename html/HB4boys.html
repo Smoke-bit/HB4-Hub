@@ -1,154 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HB4 Market | College Hub</title>
+    <title>HB4 Boys Marketplace | CollegeHub</title>
 
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/HB4boys.css">
-
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/HB4boys.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
 
 <body>
 
     <!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar">
+<header class="navbar">
 
-        <div class="nav-left">
+    <div class="nav-left">
 
-            <a href="home.html" class="logo">
+        <a href="home.html" class="logo">
+            <h2>CollegeHub</h2>
+        </a>
 
-                <i class="fa-solid fa-graduation-cap"></i>
-
-                <span>CollegeHub</span>
-
-            </a>
-
-            <div class="nav-links">
-
-                <a href="home.html">Home</a>
-
-                <a href="#" class="active">HB4 Market</a>
-
-                <a href="sell.html">Sell</a>
-
-            </div>
-
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="HB4boys.html" class="active">HB4-Boys</a>
+            <a href="Marketplace.html">Campus</a>
+            <a href="sell.html">Sell</a>
         </div>
 
-        <div class="nav-right">
+    </div>
 
-            <button class="notification-btn">
+    <div class="nav-right">
 
-                <i class="fa-regular fa-bell"></i>
+        <a href="#" class="notification-btn">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification-badge"></span>
+        </a>
 
-                <span class="notification-badge"></span>
+        <a href="profile.html" class="profile-btn">
+            <i class="fa-regular fa-user"></i>
+        </a>
 
-            </button>
+        <a href="login.html" class="logout-btn">
+            Logout
+        </a>
 
-            <a href="profile.html" class="profile-btn">
+    </div>
 
-                <i class="fa-regular fa-user"></i>
+</header>
 
-            </a>
-
-            <a href="login.html" class="logout-btn">
-
-                Logout
-
-            </a>
-
-        </div>
-
-    </nav>
 
     <!-- ================= HERO ================= -->
 
     <section class="market-hero">
 
-        <div class="hero-text">
+        <h1>HB4 Boys Marketplace</h1>
 
-            <h1>HB4 Market</h1>
-
-            <p>
-
-                Buy and sell items exclusively inside Hostel Block 4.
-
-            </p>
-
-        </div>
-
-        <a href="sell.html" class="sell-btn">
-
-            <i class="fa-solid fa-plus"></i>
-
-            Sell Item
-
-        </a>
+        <p>
+            Buy. Sell. Trade.<br>
+            Everything inside HB4.
+        </p>
 
     </section>
+    <section class="market-search">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            placeholder="Search products, sellers or categories..."
+        >
+
+    </div>
+
+</section>
+
 
     <!-- ================= SEARCH ================= -->
 
-    <section class="search-section">
+    <section class="market-search">
 
         <div class="search-box">
-
             <i class="fa-solid fa-magnifying-glass"></i>
 
             <input
                 type="text"
-                placeholder="Search for books, electronics, clothes...">
-
+                placeholder="Search for food, books, electronics..."
+            >
         </div>
 
     </section>
+
 
     <!-- ================= CATEGORIES ================= -->
 
     <section class="categories">
 
-        <h2>Browse Categories</h2>
-
-        <div class="category-row">
-
-            <button>📱 Electronics</button>
-
-            <button>📚 Books</button>
-
-            <button>👕 Clothes</button>
-
-            <button>🍜 Food</button>
-
-            <button>🎮 Gaming</button>
-
-            <button>🏸 Sports</button>
-
-            <button>🪑 Furniture</button>
-
-            <button>📦 Others</button>
-
-        </div>
+        <button class="category active">All</button>
+        <button class="category">🍔 Food</button>
+        <button class="category">📚 Books</button>
+        <button class="category">💻 Electronics</button>
+        <button class="category">🎮 Gaming</button>
+        <button class="category">👕 Clothes</button>
+        <button class="category">⚽ Sports</button>
+        <button class="category">📦 Others</button>
 
     </section>
 
-    <!-- ================= PRODUCTS ================= -->
 
-    <section class="products">
+    <!-- ================= MARKET HEADER ================= -->
 
-        <div class="section-header">
+    <section class="market-header">
 
-            <h2>Latest Listings</h2>
+        <h2>Latest Listings</h2>
+
+        <button class="sort-btn">
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+            Newest
+        </button>
+
+    </section>
+
+
+    <!-- ================= PRODUCT GRID ================= -->
+
+    <section class="products-grid">
+
+    <div class="product-card">
+        ...
+    </div>
+
+    <div class="product-card">
+        ...
+    </div>
+
+    </section>
+    <!-- ================= PRODUCT CARD 1 ================= -->
+
+<div class="product-card">
+
+    <div class="product-image">
+       <!-- <img src="images/burger.jpg" alt="Chicken Burger"> -->
+    </div>
+
+    <div class="product-content">
+
+        <span class="category-tag food">Food</span>
+
+        <h3>Chicken Burger</h3>
+
+        <p class="price">₹80</p>
+
+        <p class="description">
+            Freshly made chicken burger with fries.
+        </p>
+
+        <div class="card-footer">
+
+            <span class="seller">
+                <i class="fa-regular fa-user"></i>
+                @SnackDealer
+            </span>
+
+            <span class="time">
+                10 mins ago
+            </span>
 
         </div>
 
-        <div class="product-grid">
+        <button class="view-btn">
+            View Details
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PRODUCT CARD 2 ================= -->
+
+<div class="product-card">
+
+    <div class="product-image">
+        <!-- <img src="images/keyboard.jpg" alt="Mechanical Keyboard"> -->
+    </div>
+
+    <div class="product-content">
+
+        <span class="category-tag electronics">
+            Electronics
+        </span>
+
+        <h3>Mechanical Keyboard</h3>
+
+        <p class="price">₹1,200</p>
+
+        <p class="description">
+            Red switches. Hardly used. Comes with box.
+        </p>
+
+        <div class="card-footer">
+
+            <span class="seller">
+                <i class="fa-regular fa-user"></i>
+                Rahul Sharma
+            </span>
+
+            <span class="time">
+                1 hour ago
+            </span>
+
+        </div>
+
+        <button class="view-btn">
+            View Details
+        </button>
+
+    </div>
+
+</div>
+<!-- ================= FLOATING SELL BUTTON ================= -->
+
+<a href="sell.html" class="sell-fab">
+    <i class="fa-solid fa-plus"></i>
+    Sell
+</a>
+
+
+<script src="../js/HB4boys.js"></script>
+
+</body>
+</html>
