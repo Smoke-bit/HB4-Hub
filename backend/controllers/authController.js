@@ -42,7 +42,16 @@ exports.sendOTP = async (req, res) => {
                             });
                         }
 
-                        await sendOTPEmail(email, otp);
+                        try {
+    await sendOTPEmail(email, otp);
+} catch (error) {
+    console.error(error);
+
+    return res.status(500).json({
+        success: false,
+        message: "Failed to send OTP email"
+    });
+}
 
                         return res.json({
                             success: true,
