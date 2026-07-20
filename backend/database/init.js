@@ -48,6 +48,31 @@ db.serialize(() => {
 
         )
     `);
+    db.run(`
+        CREATE TABLE IF NOT EXISTS products (
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    seller_id INTEGER NOT NULL,
+
+    title TEXT NOT NULL,
+
+    description TEXT NOT NULL,
+
+    category TEXT NOT NULL,
+
+    price REAL NOT NULL,
+
+    image TEXT,
+
+    status TEXT DEFAULT 'available',
+
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (seller_id) REFERENCES users(id)
+
+);`)
+    
 
     console.log("✅ Database Initialized");
 
