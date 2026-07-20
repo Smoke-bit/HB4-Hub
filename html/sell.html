@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sell Item | CollegeHub</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sell.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-left">
+
+            <a href="home.html" class="logo">
+                <h2>CollegeHub</h2>
+            </a>
+
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="HB4boys.html">HB4 Boys</a>
+                <a href="Marketplace.html">Campus</a>
+                <a href="sell.html" class="active">Sell</a>
+            </div>
+
+        </div>
+
+        <div class="nav-right">
+
+            <a href="#" class="notification-btn">
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification-badge"></span>
+            </a>
+
+            <a href="profile.html" class="profile-btn">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <a href="login.html" class="logout-btn">
+                Logout
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="sell-hero">
+
+        <h1>Sell an Item</h1>
+
+        <p>
+            List your product and find a buyer in minutes.
+        </p>
+
+    </section>
+
+    <!-- ================= SELL FORM ================= -->
+
+    <section class="sell-container">
+
+        <form id="sellForm">
+
+            <!-- ================= IMAGES ================= -->
+
+            <div class="form-section">
+
+                <h3>Product Images</h3>
+
+                <div class="image-options">
+
+                    <label class="image-card">
+
+                        <input
+                            type="file"
+                            id="cameraInput"
+                            accept="image/*"
+                            capture="environment"
+                            hidden>
+
+                        <i class="fa-solid fa-camera"></i>
+
+                        <h4>Click Photo</h4>
+
+                        <p>Use your camera</p>
+
+                    </label>
+
+                    <label class="image-card">
+
+                        <input
+                            type="file"
+                            id="galleryInput"
+                            accept="image/*"
+                            multiple
+                            hidden>
+
+                        <i class="fa-regular fa-images"></i>
+
+                        <h4>Upload Images</h4>
+
+                        <p>Select from gallery</p>
+
+                    </label>
+
+                </div>
+
+                <div id="imagePreview"></div>
+
+            </div>
+
+            <!-- ================= PRODUCT DETAILS ================= -->
+
+            <div class="form-section">
+
+                <h3>Product Details</h3>
+
+                <div class="form-group">
+
+                    <label for="productName">Product Name</label>
+
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="e.g. Chicken Burger"
+                        required>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="price">Price</label>
+
+                        <input
+                            type="number"
+                            id="price"
+                            placeholder="₹"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="category">Category</label>
+
+                        <select
+                            id="category"
+                            required>
+
+                            <option value="">Select Category</option>
+                            <option>Food</option>
+                            <option>Books</option>
+                            <option>Electronics</option>
+                            <option>Gaming</option>
+                            <option>Clothes</option>
+                            <option>Sports</option>
+                            <option>Furniture</option>
+                            <option>Others</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="description">Description</label>
+
+                    <textarea
+                        id="description"
+                        rows="5"
+                        maxlength="300"
+                        placeholder="Example: Used for 2 weeks. No scratches. Pickup from HB4."></textarea>
+
+                </div>
+
+            </div>
+
+            <!-- ================= DISPLAY AS ================= -->
+
+            <div class="form-section">
+
+                <h3>Display As</h3>
+
+                <p class="section-subtitle">
+
+                    Choose what buyers will see.
+
+                </p>
+
+                <div class="display-options">
+
+                    <label class="display-card">
+
+                        <input
+                            type="radio"
+                            name="displayType"
+                            value="real"
+                            checked>
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <div>
+
+                            <h4>Real Name</h4>
+
+                            <p>Utkarsh Sharma</p>
+
+                        </div>
+
+                    </label>
+
+                    <label class="display-card">
+
+                        <input
+                            type="radio"
+                            name="displayType"
+                            value="nickname">
+
+                        <i class="fa-solid fa-at"></i>
+
+                        <div>
+
+                            <h4>Nickname</h4>
+
+                            <p>@SnackDealer</p>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- ================= SUBMIT ================= -->
+
+            <div class="submit-section">
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Post Listing
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <script src="../js/sell.js"></script>
+
+</body>
+
+</html>

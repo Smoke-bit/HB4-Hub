@@ -412,15 +412,63 @@
 }
 
 
-/* ===================================
-   BUTTON
-=================================== */
+/* ===========================
+   CARD META
+=========================== */
 
-.view-btn{
+.card-meta{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:18px 0 12px;
+
+    color:#9fa0b3;
+
+    font-size:.85rem;
+
+}
+
+.card-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+
+/* ===========================
+   SELLER
+=========================== */
+
+.seller{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:18px;
+
+    color:#d8d8e6;
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+   BUY BUTTON
+=========================== */
+
+.buy-btn{
 
     width:100%;
-
-    padding:14px;
 
     border:none;
 
@@ -430,7 +478,9 @@
 
     color:#fff;
 
-    font-size:1rem;
+    padding:12px;
+
+    font-size:.95rem;
 
     font-weight:600;
 
@@ -440,8 +490,312 @@
 
 }
 
-.view-btn:hover{
+.buy-btn:hover{
 
     background:#6947ff;
+
+}
+
+/* ===================================
+   BUY MODAL
+=================================== */
+
+.buy-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:2000;
+
+}
+
+.buy-modal.active{
+
+    display:flex;
+
+}
+
+.modal-box{
+
+    width:min(430px,92%);
+
+    background:#16161f;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    position:relative;
+
+}
+
+.close-modal{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#242432;
+
+    color:#fff;
+
+    cursor:pointer;
+
+}
+
+.modal-image{
+
+    width:100%;
+
+    height:180px;
+
+    background:#242432;
+
+    border-radius:14px;
+
+    margin-bottom:20px;
+
+}
+
+.modal-box h2{
+
+    margin-bottom:8px;
+
+}
+
+.modal-price{
+
+    color:#8d73ff;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+.modal-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    color:#c6c6d5;
+
+}
+
+.modal-info strong{
+
+    color:#fff;
+
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:28px;
+
+}
+
+.chat-btn,
+.confirm-btn{
+
+    flex:1;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.chat-btn{
+
+    background:#242432;
+
+    color:#fff;
+
+}
+
+.confirm-btn{
+
+    background:#7c5cff;
+
+    color:#fff;
+
+}
+/* ===================================
+   BUY MODAL
+=================================== */
+
+.buy-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.7);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+.buy-modal.show{
+
+    display:flex;
+
+}
+
+.modal-box{
+
+    width:min(500px,92%);
+
+    background:#1b1b27;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    position:relative;
+
+}
+
+.close-modal{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:1.2rem;
+
+}
+
+.modal-image img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+.modal-price{
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    margin:15px 0;
+
+}
+
+.modal-description{
+
+    color:#bdbdbd;
+
+    margin-bottom:20px;
+
+}
+
+.modal-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.modal-buttons button{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.chat-btn{
+
+    background:#2d2d3f;
+
+    color:white;
+
+}
+
+.confirm-btn{
+
+    background:#8b5cf6;
+
+    color:white;
 
 }

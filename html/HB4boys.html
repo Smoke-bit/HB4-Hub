@@ -66,20 +66,7 @@
         </p>
 
     </section>
-    <section class="market-search">
 
-    <div class="search-box">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
-        <input
-            type="text"
-            placeholder="Search products, sellers or categories..."
-        >
-
-    </div>
-
-</section>
 
 
     <!-- ================= SEARCH ================= -->
@@ -128,110 +115,160 @@
     </section>
 
 
-    <!-- ================= PRODUCT GRID ================= -->
+ 
+<!-- ================= PRODUCTS ================= -->
 
-    <section class="products-grid">
+<section class="products-grid" id="productsGrid">
 
-    <div class="product-card">
-        ...
-    </div>
-
-    <div class="product-card">
-        ...
-    </div>
-
-    </section>
-    <!-- ================= PRODUCT CARD 1 ================= -->
-
-<div class="product-card">
-
-    <div class="product-image">
-       <!-- <img src="images/burger.jpg" alt="Chicken Burger"> -->
-    </div>
-
-    <div class="product-content">
-
-        <span class="category-tag food">Food</span>
-
-        <h3>Chicken Burger</h3>
-
-        <p class="price">₹80</p>
-
-        <p class="description">
-            Freshly made chicken burger with fries.
-        </p>
-
-        <div class="card-footer">
-
-            <span class="seller">
-                <i class="fa-regular fa-user"></i>
-                @SnackDealer
-            </span>
-
-            <span class="time">
-                10 mins ago
-            </span>
-
-        </div>
-
-        <button class="view-btn">
-            View Details
-        </button>
-
-    </div>
-
-</div>
-
-
-<!-- ================= PRODUCT CARD 2 ================= -->
-
-<div class="product-card">
-
-    <div class="product-image">
-        <!-- <img src="images/keyboard.jpg" alt="Mechanical Keyboard"> -->
-    </div>
-
-    <div class="product-content">
-
-        <span class="category-tag electronics">
-            Electronics
-        </span>
-
-        <h3>Mechanical Keyboard</h3>
-
-        <p class="price">₹1,200</p>
-
-        <p class="description">
-            Red switches. Hardly used. Comes with box.
-        </p>
-
-        <div class="card-footer">
-
-            <span class="seller">
-                <i class="fa-regular fa-user"></i>
-                Rahul Sharma
-            </span>
-
-            <span class="time">
-                1 hour ago
-            </span>
-
-        </div>
-
-        <button class="view-btn">
-            View Details
-        </button>
-
-    </div>
-
-</div>
+</section>
 <!-- ================= FLOATING SELL BUTTON ================= -->
 
 <a href="sell.html" class="sell-fab">
     <i class="fa-solid fa-plus"></i>
     Sell
 </a>
+<!-- ================= BUY MODAL ================= -->
 
+<div class="buy-modal" id="buyModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal" id="closeModal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-image">
+            <!-- Product Image -->
+        </div>
+
+        <h2 id="modalTitle">
+            Chicken Burger
+        </h2>
+
+        <p class="modal-price" id="modalPrice">
+            ₹80
+        </p>
+
+        <div class="modal-info">
+
+            <p>
+                <strong>Seller</strong><br>
+                <span id="modalSeller">@SnackDealer</span>
+            </p>
+
+            <p>
+                <strong>Room</strong><br>
+                <span id="modalRoom">HB4 - 318</span>
+            </p>
+
+            <p>
+                <strong>Description</strong><br>
+                <span id="modalDescription">
+                    Freshly made chicken burger with fries.
+                </span>
+            </p>
+
+        </div>
+
+        <div class="modal-buttons">
+
+            <button class="chat-btn">
+                <i class="fa-regular fa-message"></i>
+                Chat Seller
+            </button>
+
+            <button class="confirm-btn">
+                Confirm Buy
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= BUY MODAL ================= -->
+
+<div class="buy-modal" id="buyModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal" id="closeModal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-image">
+
+            <img id="modalImage" src="" alt="">
+
+        </div>
+
+        <div class="modal-content">
+
+            <span
+                class="category-tag"
+                id="modalCategory">
+
+            </span>
+
+            <h2 id="modalName"></h2>
+
+            <p
+                class="modal-price"
+                id="modalPrice">
+
+            </p>
+
+            <p
+                class="modal-description"
+                id="modalDescription">
+
+            </p>
+
+            <div class="modal-info">
+
+                <p>
+
+                    <i class="fa-regular fa-user"></i>
+
+                    <span id="modalSeller"></span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Room
+
+                    <span id="modalRoom"></span>
+
+                </p>
+
+            </div>
+
+            <div class="modal-buttons">
+
+                <button class="chat-btn">
+
+                    <i class="fa-solid fa-message"></i>
+
+                    Chat Seller
+
+                </button>
+
+                <button class="confirm-btn">
+
+                    Buy Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 <script src="../js/HB4boys.js"></script>
 
